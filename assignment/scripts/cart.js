@@ -15,17 +15,21 @@ addItem('Spinach');
 console.log(basket);
 
 
-console.log( 'Adding items')
+console.log( 'Adding items');
 
-function listItems(basket){
+function listItems(){
     for(let i=0; i < basket.length; i++){
         console.log(basket[i]);
     }
 }
-console.log(basket[i]);
-///figure out why it isn't logging all the items.
+listItems(basket);
 
+function empty(){
+    basket.splice(0, basket.length);
+    console.log(basket);
+    }
 
+empty(basket);
 
 
 
