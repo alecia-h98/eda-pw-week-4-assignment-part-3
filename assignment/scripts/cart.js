@@ -6,20 +6,25 @@ let basket = [];
 console.log(basket);
 
 function addItem(item){
-    for (let i = 0; i < basket.length; i++){
-        item.push(basket[i]);
+        basket.push(item);
+        return true;
     }
-    console.log(basket[i]);
-    return true;
+
+addItem('Kale');
+addItem('Spinach');
+console.log(basket);
+
+
+console.log( 'Adding items')
+
+function listItems(basket){
+    for(let i=0; i < basket.length; i++){
+        console.log(basket[i]);
+    }
 }
+console.log(basket[i]);
+///figure out why it isn't logging all the items.
 
-// console.log( 'Adding items')
-
-// function listItems(){
-//     console.log(basket[i]);
-//     let 
-//     return;
-// }
 
 
 
